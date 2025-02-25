@@ -1,4 +1,4 @@
-![right to work](images\Right-to-work-checks.jpg)
+![right to work][def1]
 
 # Right to WORK 
  It will automate the process of editing right to work editing.
@@ -60,6 +60,6 @@ Index page | Generated Template
 
 
 
-[def1]: images\Right-to-work-checks.jpg
-[def2]: images\index.png
-[def3]: images\template.png
+[def1]: images/Right-to-work-checks.jpg
+[def2]: images/index.png
+[def3]: images/template.png
