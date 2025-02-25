@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <script>
+                alert("{{ messages[0] }}");
+            </script>
+        {% endif %}
+    {% endwith %}
+    
+    <div class="container">
+        <h2>Enter Details</h2>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <label>Name:</label>
+            <input type="text" name="name" required>
+            
+            <label>Date from:</label>
+            <input type="date" name="date_from" required>
+
+            <label>Date to:</label>
+            <input type="date" name="date_to" required>
+            
+            <label>Upload Photo:</label>
+            <input type="file" name="photo" accept="image/*" required>
+
+            <label>Password:</label>
+            <input type="password" name="password" required>
+            
+            <button type="submit">Generate</button>
+        </form>
+    </div>
+</body>
+</html>
