@@ -1,4 +1,4 @@
-![right to work][def1]
+![right to work](images\Right-to-work-checks.jpg)
 
 # Right to WORK 
  It will automate the process of editing right to work editing.
