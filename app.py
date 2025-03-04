@@ -1,8 +1,13 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, after_this_request
 from datetime import datetime
 import os
+import secrets
+
 
 app = Flask(__name__)
+
+# generate 32 char random key
+app.secret_key = secrets.token_hex(16)
 
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
